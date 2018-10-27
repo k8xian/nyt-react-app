@@ -1,0 +1,308 @@
+body {
+    margin: 0;
+    font-family: 'Source Serif Pro', serif;
+    max-width: 960px;
+    margin: 0 auto;
+    color: #121212;
+    width: 90%;
+}
+.header__logo {
+    width: 400px;
+    margin: auto;
+}
+
+.header__center {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0 0;
+}
+
+.header__buttons {
+    width: 100%;
+    text-align: right;
+}
+
+.nav__button {
+    border-radius: 3px;
+    cursor: pointer;
+    font-family: nyt-franklin,helvetica,arial,sans-serif;
+    -webkit-transition: ease 0.6s;
+    transition: ease 0.6s;
+    background-color: #6288a5;
+    border: 1px solid #326891;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    -webkit-letter-spacing: 0.05em;
+    -moz-letter-spacing: 0.05em;
+    -ms-letter-spacing: 0.05em;
+    letter-spacing: 0.05em;
+    line-height: 11px;
+    padding: 8px 9px 6px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 10px 20px 0 0;
+    width: 50px;
+    text-align: center;
+}
+
+.nav__button:hover {
+    background-color: #326891;
+}
+
+.nav__directions {
+    border-top: 1px solid #ebebeb;
+    padding: 0 60px;
+    margin: auto;
+    text-align: center;
+    max-width: 960px;
+    border-bottom: 1px solid #000;
+}
+
+.prebuilt__search {
+    display: inline-block;
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-weight: 500;
+    padding: 5px 0;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.pageTitle__bar {
+    border-bottom: 1px double #121212;
+    padding-bottom: 2px;
+    text-align: center;
+}
+
+.pageTitle__bar:after {
+    content: "";
+    display: block;
+    left: 0;
+    top: 1px;
+    width: 100%;
+    height: 1px;
+    background: #121212;
+}
+
+.search__bar {
+    text-align: center;
+    padding: 5px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.search__block {
+    text-align: center;
+    width: 21%;
+    height: 64px;
+    float: left;
+    padding: 20px 0;
+    background-color: rgba(0,0,0,.05);
+    margin: 0 10px;
+}
+
+label {
+    text-align: center;
+    width: 100%;
+    display: block;
+}
+input {
+    clear: both;
+    border: 0;
+    width: 80%;
+    text-align: center;
+    border-radius: 3px;
+    height: 32px;
+    margin-top: 13px;
+}
+
+button.search__button {
+    margin: 15px auto;
+    display: block;
+    width: 100%;
+    border-radius: 0;
+    border: 0;
+    background-color: rgba(0,0,0,.3);
+    color: white;
+    height: 30px;
+    cursor: pointer;
+    transition-property: background-color;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in-out;
+}
+
+button.search__button:hover {
+    background-color: rgba(0,0,0,.54);
+}
+
+.footer {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    color: rgba(0,0,0,.54);
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #eee;
+    cursor: pointer;
+}
+
+a {
+    color: #121212;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #000;
+}
+
+.result__container {
+    margin-bottom: 100px;
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap;
+}
+
+.article__card {
+    width: 30%;
+    margin: 10px 20px 0 0;
+    border: 1px solid #eee;
+    padding: 5px 10px;
+}
+
+@media screen and (max-width: 424px) {
+    .header__logo {
+        width: 250px;
+    }
+}
+
+
+/* html {
+    position: relative;
+    min-height: 100%;
+    text-align: center;
+}
+
+body {
+    background: #F1F1F1 url('../img/groovepaper/groovepaper.png');
+    margin-bottom: 62px;
+    height: auto;
+    color: whitesmoke;
+}
+
+.page-header,
+footer {
+    margin: 0;
+    background: #6158A5;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 62px;
+    box-shadow: 0 -2px 2px 0 rgba(0,0,0,0.14), 0 -1px 5px 0 rgba(0,0,0,0.12), 0 -3px 1px -2px rgba(0,0,0,0.2);
+}
+
+footer .container {
+    height: 61px;
+    display: flex;
+    align-items: center;
+    border: none;
+}
+
+.result-div {
+    background: #D3BCCC url('../img/groovepaper/groovepaper_@2X.png');
+    padding: 0;
+}
+
+.result-div,
+.result-holder,
+.query {
+    border-radius: 7px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 900px;
+}
+
+.result-holder,
+.query {
+    background: #ED6A5A;
+    padding: 8px;
+}
+
+.form-control {
+    margin: 20px auto;
+    padding: 8px;
+    width: 90%;
+    max-width: 900px;
+}
+
+footer a,
+.page-header a {
+    color: inherit;
+}
+
+.panels {
+    height: 50vh;
+    max-height: 500px;
+    min-height: 100px;
+    background: #ED6A5A;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.selection-panel {
+    height: 45vh;
+    max-height: 480px;
+    min-height: 80px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 7px;
+    margin: 7px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.search-button {
+    width: 100px;
+}
+
+.header-links {
+    text-align: right;
+    padding: 0;
+}
+
+.title {
+    text-align: left;
+    padding: 0;
+}
+
+.page-header .container {
+    padding: 0;
+}
+
+a:hover {
+    color: white;
+}
+
+
+.black-text {
+    color: black !important;
+}
+
+.page-header {
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+    border: none;
+} */
