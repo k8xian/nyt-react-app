@@ -11,9 +11,7 @@ var Header = React.createClass({
                         <img className="header__logo" src="./assets/img/nyt-logo.png" />
                     </div>
                     <div className="nav__directions">
-                        <a className="prebuilt__search">Link</a>
-                        <a className="prebuilt__search">Link</a>
-                        <a className="prebuilt__search">Link</a>
+                        <a className="prebuilt__search">Search and save articles from the New York Times</a>
                     </div>
             </div>
         );

@@ -6,7 +6,7 @@ var Results = React.createClass({
     render: function render() {
         return(
             <div>
-                <h1 className="black-text">Results</h1>
+                <h1 className="result__type">Results</h1>
                 <div className="result__container">
                     {this.props.results.map(function(article, i) {
                         return (

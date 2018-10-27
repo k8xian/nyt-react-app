@@ -51,7 +51,7 @@ var Result = React.createClass({
             <div className="article__card" id={this.props.articleID}>
                 <div className="">
                     <a href={this.props.url} className="black-text"><h5>{this.props.title}</h5></a>
-                    <p className="black-text">Published {this.props.date}</p>
+                    <p className="published__date">Published {this.props.date}</p>
                 </div>
                 <div className="panel-footer">
                     <button className={this.state.button} onClick={this.handleClick}>{this.state.buttonText} <span className={this.state.glyphicon}/> </button>

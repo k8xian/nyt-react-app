@@ -24,7 +24,7 @@ var Saved = React.createClass({
     render: function render() {
         return(
             <div className="result__container">
-                <h3>Saved</h3>
+                <h1 className="result__type">Results</h1>
                 {this.state.saved.map(function(article, i) {
                     return (
                         <Result key={i} url={article.url} title={article.title} date={article.date} articleID={article.articleID} savedPage={true} />
