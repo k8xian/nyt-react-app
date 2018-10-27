@@ -22,7 +22,7 @@ var helper = {
             if (response.data.response.docs.length > 0) {
                 var responses = [];
 
-                for (var i = 0; i < 5; i++) {
+                for (var i = 0; i < 10; i++) {
                     var doc = response.data.response.docs[i];
                     var articleID = doc._id;
                     var article = {
