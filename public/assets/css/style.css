@@ -22,7 +22,7 @@ body {
     text-align: right;
 }
 
-.nav__button {
+.nav__button, .remove__button, .info__button {
     border-radius: 3px;
     cursor: pointer;
     font-family: nyt-franklin,helvetica,arial,sans-serif;
@@ -41,12 +41,11 @@ body {
     padding: 8px 9px 6px;
     text-transform: uppercase;
     text-decoration: none;
-    margin: 10px 20px 0 0;
-    width: 50px;
+    margin: 10px 20px 0 5px;
     text-align: center;
 }
 
-.nav__button:hover {
+.nav__button:hover, .remove__button:hover, .info__button:hover {
     background-color: #326891;
 }
 
@@ -164,17 +163,24 @@ a:hover {
     display: flex;
     width: 100%;
     flex-flow: row wrap;
+    justify-content: space-around;
 }
 
 .article__card {
     width: 30%;
     margin: 10px 20px 0 0;
     border: 1px solid #eee;
-    padding: 5px 10px;
+    padding: 5px 0px;
+    min-width: 250px;
 }
 
 .result__type {
     width: 100%;
+}
+
+.article__content {
+    width: 80%;
+    margin: auto;
 }
 @media screen and (max-width: 424px) {
     .header__logo {

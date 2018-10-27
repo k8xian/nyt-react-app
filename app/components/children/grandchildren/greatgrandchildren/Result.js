@@ -7,16 +7,14 @@ var Result = React.createClass({
         if (this.props.savedPage) {
             return {
                 buttonText: 'remove',
-                glyphicon: 'glyphicon glyphicon-remove',
                 saved: true,
-                button: 'btn btn-danger'
+                button: 'remove__button'
             };
         } else {
             return {
                 buttonText: 'save',
-                glyphicon: 'glyphicon glyphicon-save',
                 saved: false,
-                button: 'btn btn-info'
+                button: 'info__button'
             };
         }
 
@@ -26,8 +24,7 @@ var Result = React.createClass({
             this.setState({
                 buttonText: 'save',
                 saved: false,
-                glyphicon: 'glyphicon glyphicon-save',
-                button: 'btn btn-info'
+                button: 'info__button'
             });
             helpers.deleteSaved(this.props.articleID);
 
@@ -35,8 +32,7 @@ var Result = React.createClass({
             this.setState({
                 buttonText: 'remove',
                 saved: true,
-                glyphicon: 'glyphicon glyphicon-remove',
-                button: 'btn btn-danger'
+                button: 'remove__button'
             });
             helpers.postSaved({
                 url: this.props.url,
@@ -49,7 +45,7 @@ var Result = React.createClass({
     render: function render() {
         return(
             <div className="article__card" id={this.props.articleID}>
-                <div className="">
+                <div className="article__content">
                     <a href={this.props.url} className="black-text"><h5>{this.props.title}</h5></a>
                     <p className="published__date">Published {this.props.date}</p>
                 </div>
